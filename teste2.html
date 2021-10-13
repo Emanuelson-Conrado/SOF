@@ -1,0 +1,153 @@
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="html" type="text/html" href="bootstrap/tutoriais.html">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+
+<body style="background-color: black; color: white;"> 
+ <nav class="navbar navbar-expand-lg navbar-light">
+    <!--Cria uma barra de navegação grande (expand-lg) e clara (light) -->
+    <a class="navbar-brand" href="index.html">
+      <img src="img/SFO.png" width="150 px">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+
+
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Simulações
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="simulador_gravitacao.html">Gravitação</a>
+        </div>
+      </li>
+	  <li class="nav-item">
+		<a class="nav-link" href="tutoriais.html">Tutoriais</a>
+	  </li>
+	  <li class="nav-item">
+		<a class="nav-link" href="quem_somos.html">Quem Somos?</a>
+	  </li>
+
+
+	</ul>
+
+</nav>
+
+
+<script>
+  $('.dropdown-menu a.dropdown-toggle').on('click', function(e) {
+	if (!$(this).next().hasClass('show')) {
+	  $(this).parents('.dropdown-menu').first().find('.show').removeClass('show');
+	}
+	var $subMenu = $(this).next('.dropdown-menu');
+	$subMenu.toggleClass('show');
+  
+  
+	$(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function(e) {
+	  $('.dropdown-submenu .show').removeClass('show');
+	});
+  
+  
+	return false;
+  });
+  </script>
+  
+
+<img src="img/Bem vindo1.jpg" width="1600 px" height="400">
+<section id="corpo">
+  <section id="gravitacao">
+	<h2>GRAVITAÇÃO</h2>
+	Explicação resumida do simulador (saiba mais).
+	<div style='text-align: center'><img src="img/3d-rendering-fantasy-ocean-majestic-600w-1665914935.jpg"
+		width="200px" id="grav"></div>
+  </section>
+
+  <section>
+	<h2>TENSÃO DO VENTO</h2>
+	Explicação resumida do simulador (saiba mais).
+	<div style='text-align: left'>IMAGEM OU GIF 2</div>
+  </section>
+
+  <section>
+	<h2>PRESSÃO ATMOSFÉRICA</h2>
+	Explicação resumida do simulador (saiba mais).
+	<div style='text-align: left'>IMAGEM OU GIF 3</div>
+  </section>
+
+  <section>
+	<h2>DENSIDADE</h2>
+	Explicação resumida do simulador (saiba mais).
+	<div style='text-align: left'>IMAGEM OU GIF 4</div>
+  </section>
+
+  <section>
+	<h2>SÍSMICAS</h2>
+	Explicação resumida do simulador (saiba mais).
+	<div style='text-align: left'>IMAGEM OU GIF 5</div>
+  </section>
+
+  <section>
+	<h2>FORÇA DE CORIOLIS</h2>
+	Explicação resumida do simulador (saiba mais).
+	<div style='text-align: left'>IMAGEM OU GIF 6</div>
+  </section>
+
+  <section>
+	<h2>FORÇAS DE ATRITO</h2>
+	Explicação resumida do simulador (saiba mais).
+	<div style='text-align: left'> IMAGEM OU GIF 7</div>
+  </section>
+</section>
+
+<aside id="lateral">
+  <section id="lateral1">
+	<h1>Resumo do Projeto</h1>
+	<div style="text-align: justify;">
+	  <p>Este projeto tem como objetivo a proposta de desenvolver recursos didáticos, especificamente objetos de
+		aprendizagem interativos exploratórios (simuladores interativos) em um ambiente computacional dinâmico para
+		a ensino-aprendizagem de princípios da Oceanografia Física. Trata-se de um assunto relevante, uma vez que os
+		sistemas costeiros estão entre os sistemas naturais mais importantes da Terra e o Brasil possui uma das
+		maiores faixas costeiras do planeta. Mesmo assim, pouco se tem de materiais didáticos que apoiem o estudo
+		dos fenômenos oceânicos, principalmente através da simulação desses sistemas. Visto que a educação vem cada
+		vez mais aplicando metodologias que fazem uso das tecnologias como uma maneira de preencher as lacunas
+		existentes no ensino, pois muitas vezes faltam recursos experimentais no laboratório e os custos de aulas de
+		campo são muito altos, então esse projeto surge como uma maneira de auxiliar nos estudos iniciais sobre a
+		física dos movimentos oceânicos, fornecendo assim uma melhor aprendizagem dos conceitos aos alunos.
+		Portanto, sabendo que o desenvolvimento de recursos se mostra como uma necessidade para preencher as lacunas
+		existentes no campo da Oceanografia, esse projeto se compromete a fornecer uma ferramenta complementar ao
+		ensino, permitindo ao aluno se desenvolver da mesma forma que em outras áreas onde já tem essas ferramentas
+		que podem ser trabalhadas com eles.</p>
+
+	</div>
+  </section>
+</aside>
+
+
+<footer id="rodape">
+  <!--É o rodapé da página ou do conteúdo específico.-->
+  <p>Copyright &copy; 2020 - by Emanuel Conrado <br />
+	<a href="https://web.facebook.com/?_rdc=1&_rdr" target="_blank"> Facebook</a> |
+	<a href="https://twitter.com/EmanuelConrado" target="_blank"> Twitter </a>
+  </p>
+</footer>
+
+</body>
+
+</html>
+</lDOCTYPE>
