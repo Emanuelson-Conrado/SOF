@@ -5,6 +5,17 @@
     src: url("../_fonts/bubblegum-sans-regular.otf");
 }
 
+@media only screen and (max-device-width: 900px) {
+    .dropdown-submenu { width:100%; }
+    
+    }
+@media only screen and (max-device-width: 900px) {
+     .dropdown-submenu { width:600px; } 
+        }
+@media only screen and (max-device-width: 700px) {
+     .dropdown-submenu { width:400px; } 
+            }
+
 .dropdown-submenu {
     position: relative;
   }
