@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style1.css">
     <link rel="html" type="text/html" href="bootstrap/tutoriais.html">
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
@@ -39,20 +40,20 @@
              Simulações
            </a>
            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: gray;">
-             <a class="dropdown-item" href="simulador_gravitacao.html">Gravitação</a>
-             <a class="dropdown-item" href="#">Tensão do Vento</a>
-             <a class="dropdown-item" href="#">Pressão Atmosférica</a>
-             <a class="dropdown-item" href="#">Densidade</a>
-             <a class="dropdown-item" href="#">Sísmicas</a>
-             <a class="dropdown-item" href="#">Força de Coriolis</a>
-             <a class="dropdown-item" href="#">Força de Atrito</a>
+             <a class="dropdown-item" href="gravitacao.html">Gravitação</a>
+             <a class="dropdown-item" href="tensao.html">Tensão do Vento</a>
+             <a class="dropdown-item" href="pressao.html"></a>Pressão Atmosférica</a>
+             <a class="dropdown-item" href="densidade.html">Densidade</a>
+             <a class="dropdown-item" href="sismicas.html">Sísmicas</a>
+             <a class="dropdown-item" href="coriolis.html">Força de Coriolis</a>
+             <a class="dropdown-item" href="atrito.html">Força de Atrito</a>
            </div>
          </li>
        <li class="nav-item">
-       <a class="nav-link" href="tutoriais.html">Tutoriais</a>
+       <a class="nav-link" href="tutoriais.html">Como usar</a>
        </li>
        <li class="nav-item">
-       <a class="nav-link" href="quem_somos.html">Quem Somos?</a>
+        <a class="nav-link" href="quem_somos.html">Fale Conosco</a>
        </li>
    
    
@@ -60,7 +61,19 @@
    
    </nav>
    
-  <h1>QUEM SOMOS?</h1> <br> Descrição
+  <h1 style = "margin-left: 30px;">Fale Conosco</h1> <br> 
+  <span style = "margin-left: 30px;"> Encontrou algum erro ou tem alguma sugestão? Deixe uma mensagem: </span> <br><br>
+
+  <form method="post" id="fContato" action="mailto:emanuelconrado@ufpr.br" oninput="calc_total();">
+    <fieldset id="usuario"><legend>Identificação do Usuário</legend>
+        <p><label for="cNome">Nome:</label><input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome Completo"></p> <!--insere um campo de texto com vizualização de 20 caracteres e espaço para 30--> </fieldset>
+        <p><label for="cMail">E-mail:</label><input type="email" name="tMail" id="cMail" size="20" maxlength="40"></p>
+        <fieldset id="mensagem"><legend>Mensagem do Usuário</legend>
+          <p><label for="cMsg">Mensagem:</label><textarea name="tMsg" id="cMsg" cols="30" rows="5" placeholder="Deixe aqui sua mensagem">
+          </textarea></p>
+        </fieldset>
+
+        <input type="image" src="img/botao-enviar.png" name="tEnviar" style = "background-color: black;">
 
 </body>
 
